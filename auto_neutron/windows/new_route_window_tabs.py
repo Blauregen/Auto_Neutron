@@ -526,9 +526,13 @@ class NeutronTab(SpanshTabBase, NeutronTabGUI):  # noqa: D101
             self.range_spin.value = range_
 
     def _request_params(self) -> dict[str, t.Any]:
+        ship = None if self._journal is None else self._journal.ship
         return {
             "efficiency": self.efficiency_spin.value,
             "range": self.range_spin.value,
+            "supercharge_multiplier": (
+                4 if ship is None else ship.fsd.supercharge_multiplier
+            ),
             "from": self.source_edit.text,
             "to": self.target_edit.text,
         }

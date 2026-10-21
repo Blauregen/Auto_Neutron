@@ -112,7 +112,9 @@ class SCOFrameShiftDriveMkII(FrameShiftDrive):
 
     supercharge_multiplier: int = 6
 
-    _CLASS_CONSTANTS = {5: 4}
+    # The Mk II has its own fuel curve, independent of standard size 8 SCO drives.
+    _SIZE_CONSTANTS = {8: 2.5025}
+    _CLASS_CONSTANTS = {5: 11}
 
 
 _BASE_FSDS = {  # base unengineered FSDs

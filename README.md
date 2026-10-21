@@ -45,6 +45,12 @@ In case you want to plot with Spansh, but the source or target systems are not f
 
 To use the AHK feature, the copy mode has to be disabled in the settings. The AHK path may need to be configured before this is possible.
 
+### Ship loadouts
+
+The Neutron and Galaxy plotters use the selected journal's ship loadout, including engineering and Guardian FSD boosters. The Caspian Explorer's SCO Mk II drive uses its own fuel curve and a 6× neutron supercharge; conventional and standard SCO drives use 4×.
+
+To use these changes before they are included in a release, [run this source version with Python](#running-directly).
+
 ### Plotting from CSV files
 
 Auto_Neutron will try to match the CSV file's format to one of the supported formats from Spansh, if no format is matched the file will be parsed as a csv file with one column, with an optional "System Name" header.
@@ -110,3 +116,7 @@ $ poetry install --no-dev
 $ poetry run task i18n-compile
 $ poetry run task start
 ```
+
+## Tests
+
+With the project dependencies installed, run `python -m unittest discover -s tests -v` (or `poetry run task test`). Ship tests use minimal loadouts derived from game journals, with account and location data removed. Plotter request tests run on Windows because the application imports Windows APIs; the ship tests also run on other platforms.

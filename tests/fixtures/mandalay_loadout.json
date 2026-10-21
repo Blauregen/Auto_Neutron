@@ -1,0 +1,37 @@
+{
+  "event": "Loadout",
+  "Ship": "mandalay",
+  "UnladenMass": 268.100006,
+  "CargoCapacity": 8,
+  "MaxJumpRange": 94.816475,
+  "FuelCapacity": {
+    "Main": 32.0,
+    "Reserve": 0.5
+  },
+  "Modules": [
+    {
+      "Slot": "Armour",
+      "Item": "mandalay_armour_grade1"
+    },
+    {
+      "Slot": "FrameShiftDrive",
+      "Item": "int_hyperdrive_overcharge_size5_class5",
+      "Engineering": {
+        "Modifiers": [
+          {
+            "Label": "Mass",
+            "Value": 26.0
+          },
+          {
+            "Label": "FSDOptimalMass",
+            "Value": 1997.5
+          }
+        ]
+      }
+    },
+    {
+      "Slot": "Slot02_Size5",
+      "Item": "int_guardianfsdbooster_size5"
+    }
+  ]
+}

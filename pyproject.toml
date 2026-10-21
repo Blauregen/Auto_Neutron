@@ -34,6 +34,7 @@ target-version = ["py312"]
 
 [tool.taskipy.tasks]
 start = "python main.py"
+test = "python -m unittest discover -s tests -v"
 lint = "pre-commit run --all-files"
 pyside-pyi = "pyside6-genpyi all --feature snake_case true_property"
 build = "python -OO pyinstaller_build/build.py"

@@ -1,0 +1,37 @@
+{
+  "event": "Loadout",
+  "Ship": "explorer_nx",
+  "UnladenMass": 1174.800049,
+  "CargoCapacity": 16,
+  "MaxJumpRange": 93.588806,
+  "FuelCapacity": {
+    "Main": 128.0,
+    "Reserve": 1.14
+  },
+  "Modules": [
+    {
+      "Slot": "Armour",
+      "Item": "explorer_nx_armour_grade1_default"
+    },
+    {
+      "Slot": "FrameShiftDrive",
+      "Item": "int_hyperdrive_overcharge_size8_class5_overchargebooster_mkii",
+      "Engineering": {
+        "Modifiers": [
+          {
+            "Label": "Mass",
+            "Value": 208.0
+          },
+          {
+            "Label": "FSDOptimalMass",
+            "Value": 7528.039551
+          }
+        ]
+      }
+    },
+    {
+      "Slot": "Slot04_Size5",
+      "Item": "int_guardianfsdbooster_size5"
+    }
+  ]
+}
